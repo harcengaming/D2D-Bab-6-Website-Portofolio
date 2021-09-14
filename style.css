@@ -28,10 +28,10 @@
                 padding-right: 140px;
                 padding-left: 140px;
             }
-            .home-around-skill2 {
+            /* .home-around-skill2 {
                 padding-right: 140px;
                 padding-left: 140px;
-            }
+            } */
             .home-around-work {
                 padding-right: 150px;
                 padding-left: 150px;
@@ -150,20 +150,22 @@ header {
 }
 
 .home-around-skill2 {
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
-    margin: 0px -60px 0px -60px;
+    align-content: center; */
+    /* margin: 0px -60px 0px -60px; */
+    padding-top: 30px;
+    margin-left: 17%;
 }
 
-.home-around-skill2 a:hover {
+/* .home-around-skill2 a:hover {
     background-color: #ff0000;
     padding: 8px 16px;
     border-radius: 20px;
-}
+} */
 
 .home-around-work {
     display: flex;
