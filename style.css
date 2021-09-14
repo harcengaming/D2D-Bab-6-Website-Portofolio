@@ -4,17 +4,46 @@
         padding: 0px;
         }
 
+    /* header {
+        position: fixed;
+    } */
+
     header {
             flex-direction: column; 
             padding: 0px;
             border-radius: 10px;
-            position: static;
         }
         .nav-bar-items {
             flex-direction: column;
             display: block;
             padding: 0px;
         }
+
+    /*  ============home di tengah merata================ */
+            .home-around-portofolio {
+                padding-right: 150px;
+                padding-left: 150px;
+            }
+            .home-around-skill {
+                padding-right: 140px;
+                padding-left: 140px;
+            }
+            .home-around-skill2 {
+                padding-right: 140px;
+                padding-left: 140px;
+            }
+            .home-around-work {
+                padding-right: 150px;
+                padding-left: 150px;
+            }
+            .home-around-work2 {
+                padding-right: 170px;
+                padding-left: 170px;
+            }
+            .home-around-work3 {
+                padding-right: 170px;
+                padding-left: 170px;
+            }
 
     #profile-container {
         padding-top: 32px;
@@ -43,6 +72,10 @@
 
     .education-card {
         flex: 0 1 100%;
+    }
+
+    footer {
+        font-size: 14px;
     }
     
 }    
@@ -74,7 +107,7 @@ body {
 
 /* ===================== Header ===================== */
 header {
-    background-color: #ff0000;
+    background-color: #333333;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -83,14 +116,119 @@ header {
     width: 100%;
 }
 
+/*  ============home di tengah merata================ */
+.home-around-portofolio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0px -150px 0px -150px;
+}
+
+.home-around-portofolio a:hover {
+    background-color: #ff0000;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.home-around-skill {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0px -90px 0px -90px;
+}
+
+.home-around-skill a:hover {
+    background-color: #ff0000;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.home-around-skill2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0px -60px 0px -60px;
+}
+
+.home-around-skill2 a:hover {
+    background-color: #ff0000;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.home-around-work {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0px -110px 0px -110px;
+}
+
+.home-around-work a:hover {
+    background-color: #ff0000;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.home-around-work2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0px -160px 0px -160px;
+}
+
+.home-around-work2 a:hover {
+    background-color: #ff0000;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.home-around-work3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0px -100px 0px -100px;
+}
+
+.home-around-work3 a:hover {
+    background-color: #ff0000;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+/*  ============di atas home di tengah merata================ */
+
 .logo {
     width: auto;
     cursor: pointer;
     margin: 12px 24px;
     padding: 8px 16px;
-    background-color: #fff200;
-    color: #ff0000;
+    /* background-color: #fff200; */
+    color: #fff200;
     font-size: 2em;
+    border-radius: 20px;
+}
+
+header a:hover {
+    background-color: #ff0000;
+    padding: 8px 16px;
     border-radius: 20px;
 }
 
@@ -113,7 +251,7 @@ a {
 }
 
 .nav-bar a:hover {
-    background-color: #333333;
+    background-color: #ff0000;
     padding: 10px;
     border-radius: 15px;
 }
@@ -130,7 +268,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 120px;
+    padding-top: 80px;
     margin: 0 1.5%;
 }
 
@@ -138,6 +276,11 @@ a {
     height: 300px;
     object-fit: cover;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(247, 222, 0, 0.5);
+}
+
+#profile-picture:hover {
+    box-shadow: 0px 0px 10px 0px #ff0000;
 }
 
 .title-1 {
@@ -147,6 +290,10 @@ a {
     color: #ff0000;
 }
 
+#name:hover {
+    color: #fff200;
+}
+
 .subtitle {
     font-size: 1.25em;
     line-height: 1.4;
@@ -154,12 +301,17 @@ a {
     color: #fff200;
 }
 
+.subtitle span:hover {
+    color: #ff0000;
+}
+
 #bio {
     margin-left: 50px;
 }
 
-.social-media-container a {
+.social-media-container a:hover {
     margin-right: 16px;
+    background-color: #ff0000;
 }
 
 .icon {
@@ -197,20 +349,29 @@ hr {
     /* display: flex; */
 }
 
+
 .portfolio-card div {
     width: 60%;
     margin-left: 16px;
     margin-right: 16px;
 }
 
+.portfolio-card:hover {
+    background-color: aqua;
+}
+
 
 .title-2 {
-    padding-top: 30px;
-    margin-left: 15%;
+    /* padding-top: 30px;
+    margin-left: 15%; */
     font-size: 1.5em;
     color: #ff0000;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.title-2:hover {
+    color: #fff200;
 }
 
 .title-3 {
@@ -218,6 +379,10 @@ hr {
     margin: 16px 0px;
     font-size: 1.25em;
     font-weight: 700;
+}
+
+.title-3:hover {
+    color: #fff200;
 }
 
 
@@ -235,8 +400,13 @@ hr {
     background-color: white;
     margin: 16px 1.5%;
     border-radius: 16px;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px 0px rgba(247, 222, 0, 0.5);
     width: 22%;
+}
+
+.skill-card:hover {
+    background-color:#333333;
+    box-shadow: 0px 0px 10px 0px rgba(247, 16, 0, 0.5);
 }
 
 .skill-picture {
@@ -253,15 +423,19 @@ hr {
     color: #ff0000;
 }
 
+.skill-title:hover {
+    color: #fff200;
+}
+
 /* ================= Pengalaman ===================== */
 .experience-card {
-    background-color: gray;
     margin: 32px 15%;
     padding: 16px;
     background-color: white;
     border-radius: 16px;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px 0px rgba(247, 222, 0, 0.5);
 }
+
 
 .title-4 {
     font-size: 1em;
@@ -287,14 +461,14 @@ hr {
     padding: 16px 16px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px 0px rgba(247, 222, 0, 0.5);
 }
 
-.education-picture {
+/* .education-picture {
     height: auto;
     width: 100px;
     border-radius: 10px;
-}
+} */
 
 /* ================= Footer ===================== */
 footer {
