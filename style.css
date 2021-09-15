@@ -35,16 +35,16 @@
         }
 
         .portfolio-card div {
-            width: 100%;
+            width: 94%;
             margin: 16px;
         }
 
         .portfolio-picture {
-            /* width: 100%;
-            height: auto; */
-            max-width: 100%;
+            width: 100%;
+            height: auto;
+            /* max-width: 100%; */
         }
-
+        
     .education-card {
         flex: 0 1 100%;
     }
@@ -159,7 +159,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 200px;
-    padding: 0px 32px;
+    padding: 0px 20px;
 }
 
 #profile-container {
@@ -204,7 +204,7 @@ a {
 }
 
 #bio {
-    margin-left: 50px;
+    margin-left: 38px;
 }
 
 .social-media-container a:hover {
@@ -227,10 +227,10 @@ hr {
 /* ================= Portofolio ===================== */
 .portfolio-card {
     width: 70%;
-    height: auto;
+    /* height: auto; */
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 16px 15%;
     background-color: #fff200;
     border-radius: 16px;
@@ -238,18 +238,15 @@ hr {
 }
 
 .portfolio-picture {
-    height: 250px;
+    height: 180px;
     /* width: 40%; */
     border-radius: 16px;
     object-fit: cover;
-    /* max-width: 50%; */
-    display: block;
     /* display: flex; */
 }
 
-
 .portfolio-card div {
-    width: 60%;
+    width: 84%;
     margin-left: 16px;
     margin-right: 16px;
 }
